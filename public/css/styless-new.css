@@ -1,0 +1,43 @@
+@media (min-width: 1200px) {
+    .header-main-navbar {
+      align-items: center;
+      margin: 0 auto;
+      max-width: 1200px;
+    }
+  
+    .header-nav-menu {
+      margin: 0 auto;
+      max-width: 1200px;
+    }
+  
+    .header-nav-menu a {
+      font-size: 14px;
+    }
+
+    .header-nav-menu li{
+        margin: 0 10px;
+    }
+  
+    .header-h2-buy {
+      font-size: 18px;
+      font-weight: 460;
+      max-width: none;
+    }
+  
+    .main-banner {
+      display: flex;
+      margin: 0 auto;
+      max-width: 1200px;
+    }
+  
+    .main-section {
+      align-items: center;
+      margin: 0 auto;
+      max-width: 1200px;
+    }
+  
+    .footer {
+      margin: 0 auto;
+      max-width: 1200px;
+    }
+  }

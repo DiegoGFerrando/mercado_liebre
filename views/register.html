@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Registro de Usuario</title>
+</head>
+
+<body>
+    <header class="header-main">
+        <div class="header-main-navbar">
+            <div class="header-div-logo">
+                <a href="/home"><img  class="header-logo" src="/images/logo-mercado-liebre.svg" alt="programacionFullStack"></a>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-form">
+        <form action="/registro" method="POST" class="users-form">
+            <div class="control-form">
+                <input type="text" id="nombre" name="nameSurname" value="" class="control" placeholder="Nombre y Apellido" required>
+            </div>
+              
+            <div class="control-form">
+                <input type="text" name="userName" value="" class="control" placeholder="Nombre de usuari@" required>
+            </div>
+
+            <div class="control-form">
+                <input type="email" name="userEmail" value="" class="control" placeholder="E-mail" requerid>
+            </div>
+
+            <div class="control-form">
+                <label for="userBirthdate" class="control-form-label">Fecha de Nacimiento:</label>
+                <input type="date" id="userBirthdate" name="userBirthdate" class="control" value="">
+            </div>
+
+            <div class="control-form">
+                <input type="text" name="userHome" value="" class="control" placeholder="Domicilio">
+            </div>
+            
+            <div class="control-form">
+                <label class="control-form-label">Perfil del Usuario:</label>
+                <div class="form-userProfile">
+                    <label> 
+                        <input type="radio" name="userProfile" value="seller" class="form-userProfile-radio">Comprador 
+                    </label>
+                    <label> 
+                        <input type="radio" name="userProfile" value="buyer" class="form-userProfile-radio">Vendedor 
+                    </label>
+                </div>
+            </div>
+
+            <div class="control-form">
+                <label class="control-form-label">Intereses:</label>
+                <div class="form-userCategories">
+                    <label for="electro"> 
+                        <input type="checkbox" id="electro" name="categories" value="Electro" class="form-userProfile-checkbox">Electro 
+                    </label>
+                    <label for="moda"> 
+                        <input type="checkbox" id="moda" name="categories" value="moda" class="form-userProfile-checkbox">Moda 
+                    </label>
+                    <label for="hogar"> 
+                        <input type="checkbox" id="hogar" name="categories" value="hogar"class="form-userProfile-checkbox">Hogar 
+                    </label>
+                    <label for="jugueteria"> 
+                        <input type="checkbox" id="jugueteria" name="categories" value="jugueteria" class="form-userProfile-checkbox">Juguetería 
+                    </label>
+                    <label for="vidaSana"> 
+                        <input type="checkbox" id="vidaSana" name="categories" value="vidaSana" class="form-userProfile-checkbox">Vida Sana 
+                    </label>
+                </div>
+            </div>
+
+            <div class="control-form-photo">
+                <label for="userPhoto" class="control-form-label">Foto de Usuario:</label>
+                <input type="file" name="photo" id="userPhoto" accept=".jpg, .png">
+            </div>
+
+            <div class="control-form">
+                <input type="password" name="passwordUser" value="" class="control" placeholder="Contraseña">
+            </div>
+
+            <div class="control-form">
+                <input type="password" name="passwordUserRepeat" value="" class="control" placeholder="Confirmar Contraseña">
+            </div>
+            
+            <button type="reset" class="button-form">Borrar</button>            
+            <button type="submit" class="button-form">Enviar</button>
+        </form>
+    </main>
+
+    <footer >
+        <section class="footer-login-register">  
+            <p class="footer-author">Copyright © 1999-2020 MercadoLiebre S.R.L.</p>
+        </section>
+    </footer>    
+</body>
+</html>

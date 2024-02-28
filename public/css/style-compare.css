@@ -1,0 +1,52 @@
+@media(min-width:481px) {
+    .main-section-div-2 {
+        display:flex;
+        justify-content: center;
+        align-items: stretch;
+    }
+    .main-section-article:hover {
+        box-shadow: 0 0 10px rgb(100, 100, 100, 0.6 );
+        .section-article-descripcion {
+            display: flex;
+        }
+    }
+    .article-div-flex{
+        margin: 0;
+    }
+    .header-main-navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header-h2-buy{
+        max-width: 240px;
+        text-align: right;
+        margin: 0 10px 0 0;
+    }
+    .header-hamburger-bottom{
+        display:none;
+    }
+    .header-nav-menu{
+        display: flex;
+        justify-content: space-between;
+    }
+    .header-nav-menu ul{
+        display: flex;
+        margin-top: 15px;
+    }
+    .header-nav-menu li{
+        margin: 0 6px; 
+    }
+    .header-nav-menu a{
+        font-size: 12px;
+    }
+    .header-form-search{
+       height:60%;
+    }
+    .header-input-search {
+        width: 100%;
+        font-size: 21px;
+        padding: 3.5px 43px 4.5px 7.5px;
+        margin-left: 40px;
+    }
+}
